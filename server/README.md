@@ -34,6 +34,10 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 - **Dependencies**: Base Motoko libraries (Buffer, Debug, Nat, Text, Iter)
 - **Deployment**: dfx (DFINITY SDK)
 
+## Pitch and Demo Videos
+- **Pitch Video**: 
+- **Demo Video**: https://youtu.be/4Z77soGF9PA?feature=shared
+
 ## Installation and Setup
 
 ### Prerequisites
