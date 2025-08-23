@@ -27,6 +27,11 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 - **Persistence**: Uses stable variables for inbox and archive to survive upgrades.
 - **Decentralized**: Runs on ICP, with potential for multi-user support via Principals.
 
+## Pitch and Demo Videos
+- **Pitch Video**: 
+- **Demo Video**: https://youtu.be/4Z77soGF9PA?feature=shared
+
+
 ## Tech Stack
 
 - **Language**: Motoko
