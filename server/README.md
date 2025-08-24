@@ -29,7 +29,7 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 
 
 ## Pitch and Demo Videos
-- **Pitch Video**: 
+- **Pitch Video**: https://youtu.be/wG4YKtrj_4o
 - **Demo Video**: https://youtu.be/4Z77soGF9PA?feature=shared
 
 
