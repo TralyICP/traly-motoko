@@ -27,6 +27,7 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 - **Persistence**: Uses stable variables for inbox and archive to survive upgrades.
 - **Decentralized**: Runs on ICP, with potential for multi-user support via Principals.
 
+
 ## Pitch and Demo Videos
 - **Pitch Video**: 
 - **Demo Video**: https://youtu.be/4Z77soGF9PA?feature=shared
@@ -39,23 +40,23 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 - **Dependencies**: Base Motoko libraries (Buffer, Debug, Nat, Text, Iter)
 - **Deployment**: dfx (DFINITY SDK)
 
-
 ## Installation and Setup
+
+- Visit [Mainnet Canister UI](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=r4vao-lyaaa-aaaam-qd3qq-cai) to interact with the Traly Backend APIs on the ICP.
 
 ### Prerequisites
 - Install the DFINITY SDK (dfx): Follow [official instructions](https://internetcomputer.org/docs/current/developer-docs/getting-started/install).
 - Node.js (for dfx, if needed).
-- Clone the repo: `git clone https://github.com/mighty-odewumi/traly.git`.
+- Clone the repo: `git clone https://github.com/TralyICP/traly-motoko.git`.
 
 ### Local Development
 1. Navigate to the project's server directory containing the Motoko canister code.
-```cd traly/server```
+```cd traly-backend/server```
 2. Start the local ICP replica: `dfx start`.
 3. Deploy the canister: `dfx deploy traly_backend`.
 4. Interact via dfx commands or ICP Playground.
 
 ### dfx.json Configuration
-The repo includes a `dfx.json` file to confirm ICP integration:
 
 ```json
 {
@@ -86,12 +87,10 @@ All functions are public and async where appropriate. Call them via `dfx caniste
 - **markAsRead(id: Nat)**: Marks email as read, adds points if applicable.
 - **deleteEmail(id: Nat)**: Deletes email, adds points if spam.
 - **archiveEmail(id: Nat)**: Archives email, adds points if normal.
-- **unsubscribe(id: Nat)**: Unsubscribes (deletes) spam email, adds points.
-- **runTests()**: Runs sequential tests, logging states and points.
+<!-- - **unsubscribe(id: Nat)**: Unsubscribes (deletes) spam email, adds points. -->
 
 Example dfx calls:
 ```
-dfx canister call traly_backend runTests
 dfx canister call traly_backend fetchAllEmails
 dfx canister call traly_backend markAsRead 4
 dfx canister call traly_backend deleteEmail 3

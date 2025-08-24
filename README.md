@@ -42,6 +42,8 @@ This backend is built entirely on the Internet Computer Protocol (ICP) using Mot
 
 ## Installation and Setup
 
+- Visit [Mainnet Canister UI](https://a4gq6-oaaaa-aaaab-qaa4q-cai.raw.icp0.io/?id=r4vao-lyaaa-aaaam-qd3qq-cai) to interact with the Traly Backend APIs on the ICP.
+
 ### Prerequisites
 - Install the DFINITY SDK (dfx): Follow [official instructions](https://internetcomputer.org/docs/current/developer-docs/getting-started/install).
 - Node.js (for dfx, if needed).
@@ -85,12 +87,10 @@ All functions are public and async where appropriate. Call them via `dfx caniste
 - **markAsRead(id: Nat)**: Marks email as read, adds points if applicable.
 - **deleteEmail(id: Nat)**: Deletes email, adds points if spam.
 - **archiveEmail(id: Nat)**: Archives email, adds points if normal.
-- **unsubscribe(id: Nat)**: Unsubscribes (deletes) spam email, adds points.
-- **runTests()**: Runs sequential tests, logging states and points.
+<!-- - **unsubscribe(id: Nat)**: Unsubscribes (deletes) spam email, adds points. -->
 
 Example dfx calls:
 ```
-dfx canister call traly_backend runTests
 dfx canister call traly_backend fetchAllEmails
 dfx canister call traly_backend markAsRead 4
 dfx canister call traly_backend deleteEmail 3
